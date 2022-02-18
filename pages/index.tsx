@@ -61,7 +61,14 @@ export default function Home() {
           I love to write code &#x2665;
           Experience with projects from scratch to deploying. Knowing that client almost always right, and always expects best results, it is necessary to deliver excellent outcome.
            I will work towards YOUR vission (not mine) in the best possible manner. One of my strongest asset is constantly keep learning and handle every criticism and feedback positively.
-
+{/* 
+          You will be an asset to the organization with your outstanding skills
+          and expertise. You will deliver excellent outcomes. You will work
+          toward fitting in the team and the culture seamlessly. You will get
+          the work done in the stipulated time in the best possible manner. You
+          will constantly keep learning and upgrading yourself as a
+          professional. You will handle criticism and feedback positively and
+          learn from your shortcomings. */}
         </p>
 
         <h2 className="mt-12 text-center text-3xl font-bold">Tech Stack:</h2>
