@@ -1,80 +1,151 @@
 import Head from 'next/head'
+import Gallery from './components/Gallery'
+import { data } from '../data'
+
+import other1 from '../public/img/other1.webp'
+import other2 from '../public/img/other2.webp'
+import other3 from '../public/img/other3.webp'
+import other4 from '../public/img/other4.webp'
+
+const otherImages = [
+  {
+    original: other1.src,
+    thumbnail: other1.src,
+    description: 'Converting PSD To responsive HTML template',
+  },
+  {
+    original: other2.src,
+    thumbnail: other2.src,
+    description: 'Converting PSD To responsive HTML template',
+  },
+  {
+    original: other3.src,
+    thumbnail: other3.src,
+    description: 'Converting Abode xd to responsive HTML',
+  },
+  {
+    original: other4.src,
+    thumbnail: other4.src,
+    description: 'Converting Abode xd to responsive HTML',
+  },
+]
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-gray-800 py-5 text-gray-200">
       <Head>
-        <title>Create Next App</title>
+        <title>Emilis portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
+      <main className="my-12  flex w-full flex-1 flex-col items-center justify-center px-5 text-center lg:px-20">
+        <h1 className="text-4xl font-bold lg:text-6xl">
+          Emilis Čiurlionis <span className="text-green-600">Portfolio</span>
         </h1>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
+        <p className="mt-5 w-full p-8 text-2xl md:w-3/5  lg:w-3/5 xl:w-2/5">
+          Hello, I am{' '}
+          <code className="rounded-md bg-gray-600 p-3 font-mono text-lg">
+            full stack developer
           </code>
+          . I like to code. My specialty is landing pages, E-commerce stores and
+          custom projects. Feel free to{' '}
+          <a className="underline" href="https://www.facebook.com/webasas9">
+            {' '}
+            contact me
+          </a>
         </p>
 
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
+        <h2 className="mt-12 text-center text-3xl font-bold">Why hire me?</h2>
+        <p className="mt-5 text-2xl w-full p-8 md:w-3/5  lg:w-3/5 xl:w-2/5">
+          I love to write code &#x2665;
+          Experience with projects from scratch to deploying. Knowing that client almost always right, and always expects best results, it is necessary to deliver excellent outcome.
+           I will work towards YOUR vission (not mine) in the best possible manner. One of my strongest asset is constantly keep learning and handle every criticism and feedback positively.
 
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
+        </p>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
+        <h2 className="mt-12 text-center text-3xl font-bold">Tech Stack:</h2>
+        <div className="flex w-4/5 justify-between  p-3 md:w-2/5 lg:w-2/5 xl:w-2/5">
+          <div>
+            <h5 className="text-2xl text-green-600">Back end</h5>
+            <ul className="mt-5 list-disc text-left text-xl">
+              <li>PHP</li>
+              <li>Laravel</li>
+              <li>SQL</li>
+              <li>Github</li>
+            </ul>
+          </div>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <div>
+            <h5 className="text-2xl text-green-600">Front end</h5>
+            <ul className="mt-5 list-disc text-left text-xl ">
+              <li>React</li>
+              <li>React Native</li>
+              <li>Javascript</li>
+              <li>Blade</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+            </ul>
+          </div>
         </div>
+
+        <h2 className="mt-12 text-center text-3xl font-bold">
+          Latest projects
+        </h2>
+        <div className="mt-6 mb-5 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
+          {data.map((d) => {
+            return (
+              <>
+                <div
+                  key={d.id}
+                  className="mt-6 w-96 rounded-xl border bg-gray-900 p-6  text-left shadow-lg hover:border-green-600 focus:border-green-600"
+                >
+                  <a
+                    href={d.url}
+                    className="mb-12 text-2xl font-bold text-green-400 hover:text-white focus:text-green-800"
+                  >
+                    {d.title} &rarr;
+                  </a>
+                  <div className="mt-3">
+                    <Gallery images={d.images} t={false} />
+                  </div>
+                  <p className="mt-4 border-b border-green-400 p-2 text-xl">
+                    {d.desc}
+                  </p>
+                  <div className="p-3">
+                    <h5 className="text-xl text-gray-300">Stack:</h5>
+                    <ul className="list-disc">
+                      {d.stack.map((s, index) => {
+                        return (
+                          <>
+                            <li key={index} className="text-gray-400">
+                              {s}
+                            </li>
+                          </>
+                        )
+                      })}
+                    </ul>
+                  </div>
+                </div>
+              </>
+            )
+          })}
+        </div>
+
+        <h2 className="mt-12 mb-3 text-center text-3xl font-bold">
+          Other projects
+        </h2>
+        <Gallery images={otherImages} t="left" />
       </main>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
+      <footer className="mt-24 flex w-full items-center justify-center ">
         <a
           className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://www.facebook.com/webasas9"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="ml-2 h-4" />
+          @2022 Emilis portfolio
         </a>
       </footer>
     </div>
