@@ -12,7 +12,6 @@ const otherImages = [
     id: 1,
     original: other1.src,
     thumbnail: other1.src,
-    description: 'Converting PSD To responsive HTML template',
     originalAlt:'responsive HTML template',
     thumbnailAlt :'responsive HTML template'
   },
@@ -20,7 +19,6 @@ const otherImages = [
     id: 2,
     original: other2.src,
     thumbnail: other2.src,
-    description: 'Converting PSD To responsive HTML template',
     originalAlt:'responsive HTML template',
     thumbnailAlt :'responsive HTML template'
   },
@@ -28,7 +26,6 @@ const otherImages = [
     id: 3,
     original: other3.src,
     thumbnail: other3.src,
-    description: 'Converting Abode xd to responsive HTML',
     originalAlt:'responsive HTML template',
     thumbnailAlt :'responsive HTML template'
   },
@@ -36,7 +33,6 @@ const otherImages = [
     id: 4,
     original: other4.src,
     thumbnail: other4.src,
-    description: 'Converting Abode xd to responsive HTML',
     originalAlt:'responsive HTML template',
     thumbnailAlt :'responsive HTML template'
   },
@@ -145,9 +141,9 @@ export default function Home() {
         </div>
 
         <h2 className="mt-12 mb-3 text-center text-3xl font-bold">
-          Other projects
+         Converting PSD into html projects
         </h2>
-        <Gallery images={otherImages} t="left" />
+        <Gallery images={otherImages} t="bottom" />
       </main>
 
       <footer className="mt-24 flex w-full items-center justify-center ">
