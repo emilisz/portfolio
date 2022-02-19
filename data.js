@@ -50,12 +50,15 @@ export const data = [
     stack: ['React native', 'Expo'],
     images: [
       {
+        id:1,
         original: sleep1.src,
       },
       {
+        id:2,
         original: sleep2.src,
       },
       {
+        id:3,
         original: sleep3.src,
       },
     ],
@@ -69,15 +72,18 @@ export const data = [
     stack: ['Wordpress', 'Elementor','Illustrator','Photoshop'],
     images: [
       {
+        id:1,
         original: taxi1.src,
       },
       {
+        id:2,
         original: taxi2.src,
       },
       {
         original: taxi3.src,
       },
       {
+        id:3,
         original: taxi4.src,
       },
      
@@ -92,12 +98,15 @@ export const data = [
     stack: ['Wordpress', 'Elementor','Illustrator','Photoshop'],
     images: [
       {
+        id:1,
         original: auto1.src,
       },
       {
+        id:2,
         original: auto2.src,
       },
       {
+        id:3,
         original: auto3.src,
       },
      

@@ -1,29 +1,33 @@
 import Head from 'next/head'
-import Gallery from './components/Gallery'
 import { data } from '../data'
 
 import other1 from '../public/img/other1.webp'
 import other2 from '../public/img/other2.webp'
 import other3 from '../public/img/other3.webp'
 import other4 from '../public/img/other4.webp'
+import Gallery from './components/Gallery'
 
 const otherImages = [
   {
+    id: 1,
     original: other1.src,
     thumbnail: other1.src,
     description: 'Converting PSD To responsive HTML template',
   },
   {
+    id: 2,
     original: other2.src,
     thumbnail: other2.src,
     description: 'Converting PSD To responsive HTML template',
   },
   {
+    id: 3,
     original: other3.src,
     thumbnail: other3.src,
     description: 'Converting Abode xd to responsive HTML',
   },
   {
+    id: 4,
     original: other4.src,
     thumbnail: other4.src,
     description: 'Converting Abode xd to responsive HTML',
@@ -57,18 +61,13 @@ export default function Home() {
         </p>
 
         <h2 className="mt-12 text-center text-3xl font-bold">Why hire me?</h2>
-        <p className="mt-5 text-2xl w-full p-8 md:w-3/5  lg:w-3/5 xl:w-2/5">
-          I love to write code &#x2665;
-          Experience with projects from scratch to deploying. Knowing that client almost always right, and always expects best results, it is necessary to deliver excellent outcome.
-           I will work towards YOUR vission (not mine) in the best possible manner. One of my strongest asset is constantly keep learning and handle every criticism and feedback positively.
-{/* 
-          You will be an asset to the organization with your outstanding skills
-          and expertise. You will deliver excellent outcomes. You will work
-          toward fitting in the team and the culture seamlessly. You will get
-          the work done in the stipulated time in the best possible manner. You
-          will constantly keep learning and upgrading yourself as a
-          professional. You will handle criticism and feedback positively and
-          learn from your shortcomings. */}
+        <p className="mt-5 w-full p-8 text-2xl md:w-3/5  lg:w-3/5 xl:w-2/5">
+          I love to write code &#x2665; Experience with projects from scratch to
+          deploying. Knowing that client almost always right, and always expects
+          best results, it is necessary to deliver excellent outcome. I will
+          work towards YOUR vission (not mine) in the best possible manner. One
+          of my strongest asset is constantly keep learning and handle every
+          criticism and feedback positively.
         </p>
 
         <h2 className="mt-12 text-center text-3xl font-bold">Tech Stack:</h2>
@@ -86,10 +85,10 @@ export default function Home() {
           <div>
             <h5 className="text-2xl text-green-600">Front end</h5>
             <ul className="mt-5 list-disc text-left text-xl ">
-              <li>React</li>
-              <li>React Native</li>
               <li>Javascript</li>
-              <li>Blade</li>
+              <li>Livewire</li>
+              <li>React Native</li>
+              <li>React</li>
               <li>Photoshop</li>
               <li>Illustrator</li>
             </ul>
@@ -99,42 +98,38 @@ export default function Home() {
         <h2 className="mt-12 text-center text-3xl font-bold">
           Latest projects
         </h2>
-        <div className="mt-6 mb-5 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
+        <div className="mx-3 mt-6 mb-5 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
           {data.map((d) => {
             return (
-              <>
-                <div
-                  key={d.id}
-                  className="mt-6 w-96 rounded-xl border bg-gray-900 p-6  text-left shadow-lg hover:border-green-600 focus:border-green-600"
+              <div
+                key={d.id}
+                className="mt-6 lg:w-96 rounded-xl border bg-gray-900 p-6  text-left shadow-lg hover:border-green-600 focus:border-green-600"
+              >
+                <a
+                  href={d.url}
+                  className="mb-12 text-2xl font-bold text-green-400 hover:text-white focus:text-green-800"
                 >
-                  <a
-                    href={d.url}
-                    className="mb-12 text-2xl font-bold text-green-400 hover:text-white focus:text-green-800"
-                  >
-                    {d.title} &rarr;
-                  </a>
-                  <div className="mt-3">
-                    <Gallery images={d.images} t={false} />
-                  </div>
-                  <p className="mt-4 border-b border-green-400 p-2 text-xl">
-                    {d.desc}
-                  </p>
-                  <div className="p-3">
-                    <h5 className="text-xl text-gray-300">Stack:</h5>
-                    <ul className="list-disc">
-                      {d.stack.map((s, index) => {
-                        return (
-                          <>
-                            <li key={index} className="text-gray-400">
-                              {s}
-                            </li>
-                          </>
-                        )
-                      })}
-                    </ul>
-                  </div>
+                  {d.title} &rarr;
+                </a>
+                <div className="mt-3">
+                  <Gallery images={d.images} t={false} />
                 </div>
-              </>
+                <p className="mt-4 border-b border-green-400 p-2 text-xl">
+                  {d.desc}
+                </p>
+                <div className="p-3">
+                  <h5 className="text-xl text-gray-300">Stack:</h5>
+                  <ul className="list-disc">
+                    {d.stack.map((s, index) => {
+                      return (
+                        <li key={index} className="text-gray-400">
+                          {s}
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </div>
+              </div>
             )
           })}
         </div>
