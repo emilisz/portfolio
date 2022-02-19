@@ -53,7 +53,7 @@ export default function Home() {
           Emilis Čiurlionis <span className="text-green-600">Portfolio</span>
         </h1>
 
-        <p className="mt-5 w-full p-8 text-2xl md:w-3/5  lg:w-3/5 xl:w-2/5">
+        <p className="mt-5 w-full p-8 text-2xl md:w-3/5  lg:w-3/5 xl:w-2/5 leading-10">
           Hello, I am{' '}
           <code className="rounded-md bg-gray-600 p-3 font-mono text-lg">
             full stack developer
