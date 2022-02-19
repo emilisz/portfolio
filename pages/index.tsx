@@ -1,11 +1,11 @@
 import Head from 'next/head'
+import Gallery from '../components/Gallery'
 import { data } from '../data'
 
 import other1 from '../public/img/other1.webp'
 import other2 from '../public/img/other2.webp'
 import other3 from '../public/img/other3.webp'
 import other4 from '../public/img/other4.webp'
-import Gallery from '../components/Gallery'
 
 const otherImages = [
   {
