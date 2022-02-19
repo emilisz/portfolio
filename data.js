@@ -24,7 +24,7 @@ export const data = [
     title: 'Truth or Dare generator',
     desc: 'Party game with many questions and dares to do',
     category: 'app',
-    url: '',
+    url: 'https://play.google.com/store/apps/details?id=com.emiliszzz.truth_or_dare_app',
     stack: ['React native', 'Expo'],
     images: [
       {
@@ -50,7 +50,7 @@ export const data = [
     title: 'Calm Sounds',
     desc: 'Sound app helping to relax and sleep better',
     category: 'app',
-    url: '',
+    url: 'https://play.google.com/store/apps/details?id=calm_sounds_sleep_meditate.apk',
     stack: ['React native', 'Expo'],
     images: [
       {

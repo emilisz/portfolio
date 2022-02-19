@@ -60,23 +60,24 @@ export default function Home() {
           </code>
           . I like to code. My specialty is landing pages, E-commerce stores and
           custom projects. Feel free to{' '}
-          <a className="underline" href="https://www.facebook.com/webasas9">
+          <a className="underline" href="https://www.linkedin.com/in/emilis-%C4%8Diurlionis/">
             {' '}
             contact me
           </a>
         </p>
 
         <h2 className="mt-12 text-center text-3xl font-bold">Why hire me?</h2>
-        <p className="mt-5 w-full p-8 text-2xl md:w-3/5  lg:w-3/5 xl:w-2/5">
-          I love to write code &#x2665; Experience with projects from scratch to
+        <p className="mt-5 w-full p-8 text-2xl md:w-3/5  lg:w-3/5 xl:w-2/5 leading-10">
+          I love to write code <span className=" text-green-400">&#x2665;</span>. Experience with projects from scratch to
           deploying. Knowing that client almost always right, and always expects
-          best results, it is necessary to deliver excellent outcome. I will
+          <span className=" text-green-400"> best results</span>, it is necessary to <span className=" text-green-400">deliver excellent outcome</span> . I will
           work towards YOUR vission (not mine) in the best possible manner. One
           of my strongest asset is constantly keep learning and handle every
           criticism and feedback positively.
         </p>
 
         <h2 className="mt-12 text-center text-3xl font-bold">Tech Stack:</h2>
+        <a target="_blank" className='my-3' href="https://github.com/emilisz"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="github logo" /></a>
         <div className="flex w-4/5 justify-between  p-3 md:w-2/5 lg:w-2/5 xl:w-2/5">
           <div>
             <h5 className="text-2xl text-green-600">Back end</h5>
@@ -95,6 +96,8 @@ export default function Home() {
               <li>Livewire</li>
               <li>React Native</li>
               <li>React</li>
+              <li>Tailwindcss</li>
+              <li>Bootstrap</li>
               <li>Photoshop</li>
               <li>Illustrator</li>
             </ul>
@@ -113,7 +116,7 @@ export default function Home() {
               >
                 <a
                   href={d.url}
-                  className="mb-12 text-2xl font-bold text-green-400 hover:text-white focus:text-green-800"
+                  className="mb-12 text-2xl font-bold text-green-400 hover:text-white focus:text-green-800 underline"
                 >
                   {d.title} &rarr;
                 </a>
@@ -149,7 +152,7 @@ export default function Home() {
       <footer className="mt-24 flex w-full items-center justify-center ">
         <a
           className="flex items-center justify-center"
-          href="https://www.facebook.com/webasas9"
+          href="https://www.linkedin.com/in/emilis-%C4%8Diurlionis/"
           target="_blank"
           rel="noopener noreferrer"
         >
