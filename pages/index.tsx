@@ -13,24 +13,28 @@ const otherImages = [
     original: other1.src,
     thumbnail: other1.src,
     description: 'Converting PSD To responsive HTML template',
+    originalAlt:'responsive HTML template'
   },
   {
     id: 2,
     original: other2.src,
     thumbnail: other2.src,
     description: 'Converting PSD To responsive HTML template',
+    originalAlt:'responsive HTML template'
   },
   {
     id: 3,
     original: other3.src,
     thumbnail: other3.src,
     description: 'Converting Abode xd to responsive HTML',
+    originalAlt:'responsive HTML template'
   },
   {
     id: 4,
     original: other4.src,
     thumbnail: other4.src,
     description: 'Converting Abode xd to responsive HTML',
+    originalAlt:'responsive HTML template'
   },
 ]
 

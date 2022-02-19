@@ -29,15 +29,19 @@ export const data = [
     images: [
       {
         original: truth1.src,
+        originalAlt:'Truth or Dare generator'
       },
       {
         original: truth2.src,
+         originalAlt:'Truth or Dare generator'
       },
       {
         original: truth3.src,
+         originalAlt:'Truth or Dare generator'
       },
       {
         original: truth4.src,
+         originalAlt:'Truth or Dare generator'
       },
     ],
   },
@@ -52,14 +56,17 @@ export const data = [
       {
         id:1,
         original: sleep1.src,
+        originalAlt:'Calm Sounds'
       },
       {
         id:2,
         original: sleep2.src,
+          originalAlt:'Calm Sounds'
       },
       {
         id:3,
         original: sleep3.src,
+          originalAlt:'Calm Sounds'
       },
     ],
   },
@@ -74,17 +81,21 @@ export const data = [
       {
         id:1,
         original: taxi1.src,
+        originalAlt:'Nice taxi'
       },
       {
         id:2,
         original: taxi2.src,
+        originalAlt:'Nice taxi'
       },
       {
         original: taxi3.src,
+        originalAlt:'Nice taxi'
       },
       {
         id:3,
         original: taxi4.src,
+        originalAlt:'Nice taxi'
       },
      
     ],
@@ -100,14 +111,17 @@ export const data = [
       {
         id:1,
         original: auto1.src,
+        originalAlt:'Landing page'
       },
       {
         id:2,
         original: auto2.src,
+        originalAlt:'Landing page'
       },
       {
         id:3,
         original: auto3.src,
+        originalAlt:'Landing page'
       },
      
     ],
