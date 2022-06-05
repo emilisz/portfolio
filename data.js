@@ -16,6 +16,11 @@ import auto1 from './public/img/auto1.webp'
 import auto2 from './public/img/auto2.webp'
 import auto3 from './public/img/auto3.webp'
 
+import coffee1 from './public/img/coffee1.webp'
+import coffee2 from './public/img/coffee2.webp'
+import coffee3 from './public/img/coffee3.webp'
+import coffee4 from './public/img/coffee4.webp'
+
 // console.log(sleep1.src);
 
 export const data = [
@@ -121,6 +126,32 @@ export const data = [
       {
         id:3,
         original: auto3.src,
+        originalAlt:'Landing page'
+      },
+     
+    ],
+  },
+  {
+    id: 5,
+    title: 'Coffee place web template',
+    desc: 'Landing page for coffee bar. ',
+    category: 'web template',
+    url: 'https://crush-coffee.vercel.app/',
+    stack: ['HTML5', 'Tailwindcss'],
+    images: [
+      {
+        id:1,
+        original: coffee1.src,
+        originalAlt:'Landing page'
+      },
+      {
+        id:2,
+        original: coffee2.src,
+        originalAlt:'Landing page'
+      },
+      {
+        id:3,
+        original: coffee3.src,
         originalAlt:'Landing page'
       },
      
