@@ -21,6 +21,11 @@ import coffee2 from './public/img/coffee2.webp'
 import coffee3 from './public/img/coffee3.webp'
 import coffee4 from './public/img/coffee4.webp'
 
+import solo1 from './public/img/solo1.webp'
+import solo2 from './public/img/solo2.webp'
+import solo3 from './public/img/solo3.webp'
+import solo4 from './public/img/solo4.webp'
+
 // console.log(sleep1.src);
 
 export const data = [
@@ -142,17 +147,48 @@ export const data = [
       {
         id:1,
         original: coffee1.src,
-        originalAlt:'Landing page'
+        originalAlt:'Coffee venue'
       },
       {
         id:2,
         original: coffee2.src,
-        originalAlt:'Landing page'
+        originalAlt:'Coffee venue'
       },
       {
         id:3,
         original: coffee3.src,
-        originalAlt:'Landing page'
+        originalAlt:'Coffee venue'
+      },
+     
+    ],
+  },
+  {
+    id: 6,
+    title: 'Solo pica',
+    desc: 'Pizza venue website',
+    category: 'website',
+    url: 'https://solo-pica.vercel.app/',
+    stack: ['NextJS','React', 'Tailwindcss','Stripe'],
+    images: [
+      {
+        id:1,
+        original: solo1.src,
+        originalAlt:'Solo pica'
+      },
+      {
+        id:2,
+        original: solo2.src,
+        originalAlt:'Solo pica'
+      },
+      {
+        id:3,
+        original: solo3.src,
+        originalAlt:'Solo pica'
+      },
+      {
+        id:4,
+        original: solo4.src,
+        originalAlt:'Solo pica'
       },
      
     ],
