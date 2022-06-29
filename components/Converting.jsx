@@ -40,7 +40,7 @@ const otherImages = [
 const Converting = () => {
   return (
     <div className='max-w-4xl flex flex-col mx-auto'>
-        <h2 className="my-12  text-center text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-green-600 to-gray-100">
+        <h2 className="my-12 w-full text-center text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-green-600 to-gray-100 border-b py-6 px-12">
           Other projects
         </h2>
         <Gallery images={otherImages} t="bottom" />

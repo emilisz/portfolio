@@ -5,7 +5,7 @@ import { data } from '../data'
 const Projects = () => {
   return (
     <div>
-      <h2 className="mt-12 text-center text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-green-600 to-gray-100">Latest projects</h2>
+      <h2 className="mt-12 text-center text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-green-600 to-gray-100 border-b py-6 px-12">Latest projects</h2>
       <div className="mx-auto mt-6 mb-5 grid max-w-4xl items-center justify-around  gap-2 sm:w-full lg:grid-cols-2">
         {data.map((d) => {
           return (
